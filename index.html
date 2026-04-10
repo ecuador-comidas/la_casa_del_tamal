@@ -226,6 +226,20 @@ footer{background:var(--cafe);padding:3rem 2rem;text-align:center;position:relat
   display: flex;
   justify-content: space-between;
 }
+
+
+.video-item {
+  display: flex;
+  justify-content: center; /* centra horizontal */
+  align-items: center;     /* centra vertical */
+}
+
+.video-item video {
+  width: 250px;   /* tamaño normal */
+  height: auto;
+  border-radius: 12px;
+}
+
 </style>
 </head>
 <body>
@@ -493,6 +507,12 @@ footer{background:var(--cafe);padding:3rem 2rem;text-align:center;position:relat
     <h2 class="section-title">Galeria de fotos</h2>
     <div class="section-deco"></div>
   </div>
+  <div class="galeria-item video-item">
+<video controls>
+  <source src="img/videoruta.mp4" type="video/mp4">
+  Tu navegador no soporta video.
+</video>
+</div>
   <div class="galeria-masonry reveal">
     <div class="galeria-item"><div class="galeria-placeholder tall">&#x1F35E;</div></div>
     <div class="galeria-item"><div class="galeria-placeholder">&#x1F373;</div></div>
